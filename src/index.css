@@ -1,0 +1,279 @@
+#root {
+  margin: 0;
+  padding: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%232c3539' fill-opacity='0.32' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+body {
+  background-color: #0f1626;
+  color: #ffff;
+}
+
+/***************! NAV BAR !****************/
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.bar {
+  width: max-content;
+  cursor: pointer;
+}
+
+/** star **/
+
+.start {
+  font-family: "Inria Sans", sans-serif;
+  margin: 10px 0 0;
+}
+
+.first {
+  font-weight: 300;
+  margin: 10px 0 0 10px;
+}
+
+.second {
+  font-weight: 700;
+  background-color: #ccc;
+  background: linear-gradient(
+    255.24deg,
+    #ff0080 39.58%,
+    rgba(255, 255, 255, 0) 104.09%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/** SECTIONS **/
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 52%;
+  width: max-content;
+}
+
+.sectwo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 550;
+  font-size: 17px;
+  margin: 17px 25px 0;
+}
+
+/*********** HEADER *************/
+
+.container {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+
+.titule {
+  position: relative;
+  right: 21vw;
+  top: 20vh;
+  font-size: 60px;
+  background-color: #ccc;
+  background: linear-gradient(
+    262.28deg,
+    #00ff7f 12.58%,
+    rgba(255, 255, 255, 0) 100.55%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.description {
+  position: relative;
+  left: 8vh;
+  bottom: -20vh;
+  width: 450px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.svg-astro {
+  position: relative;
+  width: 550px;
+  height: 600px;
+  left: 23%;
+  top: -17vh;
+  color: #2e3d5f;
+  animation-name: astronaut;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contact-me {
+  position: relative;
+  left: -25vh;
+  top: -40vh;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background-color: #ff7f50;
+  border: none;
+  color: #d3d3d3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-me:hover {
+  transform: scale(1.2);
+}
+
+.arrow {
+  font-size: 70px;
+  position: relative;
+  top: -15vh;
+  color: #2e3d5f;
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/******************* ABOUT ME *************/
+
+.about-container {
+  font-family: "Montserrat", sans-serif;
+  height: 550px;
+}
+
+.sec-about {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.presentation-img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #6842ff;
+  border-radius: 49% 51% 47% 53% / 52% 28% 72% 48%;
+  left: 20vw;
+  top: 5vh;
+}
+
+.presentation-txt {
+  width: 500px;
+  position: relative;
+  left: 55%;
+  top: -17vh;
+  text-align: left;
+}
+
+/*********************  PROJECTS *************/
+
+.projects-container {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.sec-projects {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0 0 90px 0;
+}
+
+
+/****************** SLIDER **************************/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  margin: 1% auto;
+  min-height: 80vh;
+  display: flex;
+}
+
+.panel {
+  color: #000;
+  text-align: center;
+  align-items: center;
+  transition: all 0.7s;
+    font-size: 25px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:  'Open Sans', sans-serif;
+}
+
+.panel1{
+    background-image:url(assets/svg/logo-javascript.svg) ;
+    background-color: #F0DB4F;
+}
+.panel2{
+    background-image:url(assets/svg/react-2.svg);
+    background-color: #333333;
+}
+.panel3{
+    background-image:url(assets/svg/c--4.svg) ;
+    background-color: #3F3576;
+}
+.panel4{
+    background-image:url(assets/svg/dot-net-core-7.svg);
+    background-color: #3b3b3b;
+    background-size: contain;
+}
+
+.panel.open{
+    flex: 4;
+    font-size: 50px;
+
+}
+
+
+/********** FOOTER ************/
+
+.footer {
+  margin: 20px;
+  background-color: rgba(52, 73, 94, 0.623);
+  height: 400px;
+}
+
+/************** ANIMATIONS *************/
+
+@keyframes astronaut {
+  0% {
+    transform: translateY(-3vh);
+  }
+
+  100% {
+    transform: translateY(-6vh);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: scale(1);
+    transform: translateY(-2vh);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+
